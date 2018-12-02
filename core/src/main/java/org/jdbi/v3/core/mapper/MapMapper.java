@@ -31,8 +31,9 @@ import org.jdbi.v3.core.statement.StatementContext;
  * keys are column names, while map values are the values in those columns. Map keys are converted to lowercase by
  * default.
  *
- * @see GenericMapMapperFactory for generics support (i.e. to get {@code Map<String, X>})
+ * @deprecated see {@link GenericMapMapperFactory} for generics support (i.e. to get {@code Map<String, T>})
  */
+@Deprecated
 public class MapMapper implements RowMapper<Map<String, Object>> {
     /**
      * @deprecated remove

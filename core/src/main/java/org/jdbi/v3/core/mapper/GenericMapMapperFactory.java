@@ -34,7 +34,7 @@ import org.jdbi.v3.core.statement.StatementContext;
 import org.jdbi.v3.meta.Beta;
 
 @Beta
-// TODO jdbi4: consolidate with MapMapper and include by default
+// TODO jdbi4: replace MapMapper with this, check if registering by default is compatible with other Map-mapping features
 public class GenericMapMapperFactory implements RowMapperFactory {
     // invoked by sqlobject
     @Override
